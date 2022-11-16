@@ -11,6 +11,7 @@ class BookController extends Controller
 {
     public function index()
     {
+        dd($_SERVER);
         $books = Book::paginate(5);
 
         return view('index', compact(['books']));
