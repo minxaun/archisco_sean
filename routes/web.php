@@ -19,6 +19,7 @@ use App\Http\Controllers\OrderController;
 // });
 
 Route::get('/', [BookController::class, 'index']);
+Route::get('/geo-ip', [BookController::class, 'geoIp']);
 Route::get('/cart', [BookController::class, 'cart']);
 Route::get('/increase-one-item/{id}', [BookController::class, 'increaseByOne']);
 Route::get('/decrease-one-item/{id}', [BookController::class, 'decreaseByOne']);

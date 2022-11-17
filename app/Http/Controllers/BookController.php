@@ -68,4 +68,9 @@ class BookController extends Controller
         }
         return redirect()->action('BooksController@index');
     }
+
+    public function geoIp()
+    {
+        return view('geo-ip');
+    }
 }
